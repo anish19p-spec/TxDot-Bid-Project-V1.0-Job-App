@@ -28,3 +28,4 @@ python -m txdot_bid_analysis --help
 ## Guide
 
 - [Setup, commands, outputs, and limitations](docs/USER_GUIDE.md)
+- https://docs.google.com/document/d/1tyh6H2ZtWiufpxzmb1T6wt_iHFg5n_ynEeaA2n71YpQ/edit?usp=sharing
