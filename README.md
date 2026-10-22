@@ -2,8 +2,6 @@
 
 A Python tool for extracting TxDOT aviation bids, comparing contractors, and tracking historical unit prices.
 
-
-
 ## Completed
 
 - Discover project listings, download PDFs, and extract bids with Gemini.
@@ -14,7 +12,7 @@ A Python tool for extracting TxDOT aviation bids, comparing contractors, and tra
 ## To do
 
 - Create a linear regression model based on previous data consisting of data like geographical preference, units, and the date
-- Create a chatbot so people can conveniently
+- Create a chatbot for exploring bid comparisons and historical prices.
 
 ## Install from source
 
