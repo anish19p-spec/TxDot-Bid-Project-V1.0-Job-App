@@ -29,3 +29,15 @@ python -m txdot_bid_analysis --help
 
 - [Setup, commands, outputs, and limitations](docs/USER_GUIDE.md)
 - https://docs.google.com/document/d/1tyh6H2ZtWiufpxzmb1T6wt_iHFg5n_ynEeaA2n71YpQ/edit?usp=sharing
+- For Lockhart airport:
+
+source .venv/bin/activate
+
+# Find Lockhart, download its PDF, and extract the bids with Gemini.
+python -m txdot_bid_analysis --extract --project NTB2614LHART00034
+
+# Select the latest saved extraction.
+AUDIT_FILE=$(python -c 'from pathlib import Path; print(max((p for p in Path("data/raw/NTB2614LHART00034/extractions").glob("*.json") if not p.name.endswith(".structured.json")), key=lambda p: p.stat().st_mtime))')
+
+# Create the Excel and PDF comparisons.
+python -m txdot_bid_analysis --report-saved "$AUDIT_FILE"
