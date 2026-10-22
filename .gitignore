@@ -1,0 +1,22 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+# Environments, caches and packaging
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.DS_Store
+# Source documents, reports and local development data
+data/
+output/
+tests/
+tmp/
+logs/
+*.log
+~$*
